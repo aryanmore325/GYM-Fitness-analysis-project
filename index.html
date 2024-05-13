@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Science Analysis Project</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .navbar-brand {
+            font-size: 28px; /* Increased font size for the navbar */
+            margin: 0 auto; /* Center align the text */
+            display: block;
+            width: auto;
+        }
+
+        .button-container {
+            margin-top: 10px;
+            text-align: right;
+        }
+
+        .button {
+            padding: 10px 20px;
+            margin: 0 10px;
+            background-color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #cccccc;
+        }
+
+        .image-container {
+            margin-top: 20px; /* Adjust margin as needed */
+            text-align: center;
+            border-radius: 15px; /* Rounded corners */
+            overflow: hidden; /* Hide overflow to round corners properly */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+            width: 97%; /* Set width to 97% */
+            margin-left: auto; /* Center align */
+            margin-right: auto; /* Center align */
+        }
+
+        .image-container img {
+            width: 100%; /* Ensure the image fills the container */
+            display: block; /* Remove any residual spacing */
+        }
+
+        .segment {
+            margin-top: 20px; /* Adjust margin as needed */
+            background-color: #87CEEB; /* Sky blue background color */
+            border-radius: 15px; /* Rounded corners */
+            padding: 20px; /* Add padding */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+        }
+
+        .segment h2 {
+            font-size: calc(28px + 2%); /* Increase font size by 2% */
+        }
+
+        .segment ul {
+            margin-left: 20px; /* Add left margin to the list */
+        }
+
+        .segment ul li {
+            margin-bottom: 10px; /* Add bottom margin to list items */
+        }
+
+        .navbar {
+            background-color: #87CEEB !important; /* Sky blue background color */
+            border-radius: 15px; /* Rounded corners */
+            border: 1px solid rgba(0, 0, 0, 0.1); /* Soft border */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+            padding: 10px 15px; /* Decreased padding */
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+        <h2 class="navbar-brand mx-auto font-weight-bold">Fitness Analysis</h2>
+        <div class="button-container">
+            <button class="btn btn-primary" onclick="openColab()">Open Colab</button>
+            <button class="btn btn-secondary" onclick="openGraphPage()">Graph</button>
+        </div>
+    </div>
+</nav>
+
+<div class="image-container">
+    <img src="bg1.jpg" alt="Your Image">
+</div>
+
+<div class="container">
+    <div class="segment">
+        <h2>Key Components of Fitness Analysis</h2>
+        <ul>
+            <li><strong>Data Collection:</strong> The project begins with the collection of survey data from participants, which may include demographics, exercise frequency, types of exercises preferred, dietary habits, fitness goals, challenges faced, and motivational factors.</li>
+            <li><strong>Data Preprocessing:</strong> Raw survey data often requires preprocessing to clean and prepare it for analysis. This step involves handling missing values, removing outliers, and possibly transforming the data into a more suitable format for analysis.</li>
+            <li><strong>Exploratory Data Analysis (EDA):</strong> EDA is crucial for gaining initial insights into the data. This involves generating descriptive statistics, visualizations (such as histograms, box plots, and scatter plots), and identifying patterns and trends within the dataset.</li>
+            <li><strong>Statistical Analysis:</strong> Statistical techniques may be employed to explore relationships between different variables, such as correlation analysis to identify associations between exercise frequency and fitness goals, or hypothesis testing to determine if certain factors significantly impact fitness outcomes.</li>
+            <li><strong>Insights and Recommendations:</strong> Finally, the project concludes with the synthesis of insights derived from the analysis. These insights can inform evidence-based recommendations for individuals, fitness professionals, or organizations seeking to optimize fitness programs, improve adherence, and enhance overall health outcomes</li>
+        </ul>
+    </div>
+</div>
+
+<!-- Bootstrap JS (optional) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    function openColab() {
+        // Replace 'your_colab_link' with your actual Colab link
+        var colabLink = 'https://colab.research.google.com/drive/16CE152KKEhadmqyRAjpGSVZWJOdHrGgB#scrollTo=tmhNMU5RDto8';
+        window.open(colabLink, "_blank");
+    }
+
+    function openGraphPage() {
+        // Replace 'path_to_graph_page' with the actual path to your graph.html file
+        var graphPagePath = 'graph.html';
+        window.open(graphPagePath, "_blank");
+    }
+</script>
+
+</body>
+</html>
